@@ -3,6 +3,7 @@
 BaseCaching = __import__('base_caching').BaseCaching
 from collections import deque
 
+
 class FIFOCache(BaseCaching):
     ''' FIFOcashe class '''
     def __init__(self):
