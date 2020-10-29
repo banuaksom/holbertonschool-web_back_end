@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 ''' FIFO caching '''
-BaseCaching = __import__('base_caching').BaseCaching
 from collections import deque
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class FIFOCache(BaseCaching):
     ''' FIFOcashe class '''
     def __init__(self):
-        ''' init '''
+        ''' init constructor'''
         super().__init__()
         self.queue = deque()
 
